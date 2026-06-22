@@ -1,0 +1,327 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IronForge Fitness</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:#d0d0d0;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff3b30;
+    color:white;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#151515;
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:#151515;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+}
+
+.price{
+    font-size:3rem;
+    color:#ff3b30;
+    margin:20px 0;
+}
+
+.price-card ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.price-card li{
+    margin:10px 0;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:#151515;
+    padding:30px;
+    border-radius:20px;
+}
+
+.testimonial h4{
+    margin-top:15px;
+    color:#ff3b30;
+}
+
+.cta{
+    text-align:center;
+    background:#111;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="hero">
+        <h1>IRONFORGE FITNESS</h1>
+        <p>
+            Transform your body, build unstoppable discipline,
+            and train with elite coaches in a premium fitness environment.
+        </p>
+
+        <a href="#pricing" class="btn">
+            Start Your Transformation
+        </a>
+    </div>
+</header>
+
+<section>
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>Elite Trainers</h3>
+            <p>Certified coaches focused on strength, muscle gain and fat loss.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern Equipment</h3>
+            <p>Train with world-class machines and free weights.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nutrition Support</h3>
+            <p>Personalized plans to maximize results.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community</h3>
+            <p>Train alongside motivated individuals pushing for greatness.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="pricing">
+    <h2 class="section-title">Membership Plans</h2>
+
+    <div class="pricing">
+
+        <div class="price-card">
+            <h3>Starter</h3>
+            <div class="price">₹999</div>
+
+            <ul>
+                <li>Gym Access</li>
+                <li>Basic Guidance</li>
+                <li>Locker Access</li>
+            </ul>
+
+            <a href="#" class="btn">Join Now</a>
+        </div>
+
+        <div class="price-card">
+            <h3>Pro</h3>
+            <div class="price">₹1999</div>
+
+            <ul>
+                <li>Everything in Starter</li>
+                <li>Personalized Workout Plan</li>
+                <li>Monthly Assessment</li>
+            </ul>
+
+            <a href="#" class="btn">Join Now</a>
+        </div>
+
+        <div class="price-card">
+            <h3>Elite</h3>
+            <div class="price">₹3999</div>
+
+            <ul>
+                <li>Personal Coach</li>
+                <li>Nutrition Plan</li>
+                <li>Priority Support</li>
+            </ul>
+
+            <a href="#" class="btn">Join Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">What Members Say</h2>
+
+    <div class="testimonials">
+
+        <div class="testimonial">
+            <p>
+                "Lost 12 kg in six months. Best decision I made."
+            </p>
+            <h4>- Rahul</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                "Amazing coaches and incredible atmosphere."
+            </p>
+            <h4>- Priya</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                "Added 40 kg to my squat and gained confidence."
+            </p>
+            <h4>- Arjun</h4>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="cta">
+        <h2 class="section-title">Ready To Become Stronger?</h2>
+
+        <p>
+            Join hundreds of members already transforming their lives.
+        </p>
+
+        <a href="#" class="btn">
+            Claim Free Trial
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 IronForge Fitness. All Rights Reserved.
+</footer>
+
+<script>
+
+document.querySelectorAll('.btn').forEach(button => {
+
+    button.addEventListener('click', function(e){
+
+        if(this.getAttribute('href') === '#'){
+
+            e.preventDefault();
+
+            alert('Thanks for your interest! Contact us at +91 98765 43210');
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```
